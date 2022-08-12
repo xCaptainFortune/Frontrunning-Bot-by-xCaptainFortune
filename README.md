@@ -29,7 +29,7 @@ Now that the frontrun transaction is done, the user will proceed to add 1 eth to
 ![Screen Shot 2022-08-12 at 2 29 12 PM](https://user-images.githubusercontent.com/110858141/184421493-f85a76e0-9592-4f79-a1a6-30735434d262.png)
 
 The inital token reserves were 29 842.49 and the final token reserves were 27142.49901. Meaning that he obtained 2700 tokens ! (29 842.49 - 27142.49901).
-By adding 0.0527 eth to the pool before the user did we managed to give him the worse possible price he could get ! 
+By adding 0.0527 eth to the pool before the user we managed to give him the worse possible price he could get ! 
 
 After the user purchases his 2700 tokens, we sell our 157.51 tokens we got from our 0.0527 eth. 
 
