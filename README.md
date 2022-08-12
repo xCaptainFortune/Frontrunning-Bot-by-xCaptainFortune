@@ -6,7 +6,7 @@ This is a frontrunning bot I wrote as a better alternative to LIBEVM'S Sandwich 
 - Decoding transaction data
 - Unlike LIBEVM's bot we do not use any profit algos such as Binary search to find the most profitable amount_in for our trade. This is too slow and the optimal amount can be calculated much faster in one step from a simple equation.  
 
-(1) When a user makes a trade, he will accept a certain slippage tolerance. A Sandwich Bot operator takes advantage of this slippage tolerance to buy the most tokens possible until the user's slippage tolerance has been reached. Hence for a sandwich the optimal amount of tokens to buy is the one that moves the price enough so that the user gets as less tokens as possible (in a transaction data this corresponds to the minimum_amount_out calculated from the user's slippage tolerance)
+(1) When a user makes a trade, he will accept a certain slippage tolerance. A Sandwich Bot operator takes advantage of this slippage tolerance to buy as most tokens as possible until the user's slippage tolerance has been reached. Hence for a sandwich the optimal amount of tokens to buy is the one that moves the price enough so that the user gets as less tokens as possible (in a transaction data this corresponds to the minimum_amount_out calculated from the user's slippage tolerance)
 
 I'll let you reason about this so you can go and attempt to find the equation by yourself which is a fun and challenging exercise for you to do. The equation you should obtain is
 
