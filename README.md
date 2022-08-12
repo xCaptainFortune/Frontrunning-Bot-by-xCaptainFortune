@@ -47,12 +47,12 @@ for pancakeswap the dexFee is 1.0025, for uniswap 1.003 and so on...
 
 - The bot currently frontruns trades that use swapExactETHForTokens and swapExactTokensForTokens. You can modify this bot to accept more methods. For each method you must adjust the parameters accordingly. For example, for swapExactETHForTokens the amountIn corresponds to the tx.value field while for swapExactTokensForTokens it corresponds to params[2].value. 
 
-- This bot does not uses Flashbot's bundling because it is generalized to work on chains other than Ethereum. It is riskier to frontrun on chains like BSC, FTM, AVAX because you cannot bundle the [frontrun tx - victim tx - backrun tx] into a single atomic tx as in a FlashBot's bundle. The transactions are executed non-atomically meaning you could waste money on fees. Indeed this bot still achieves to make 1$-10$ profitable sandwiches on bsc with a good node but also need to be improved to save gas! I will leave this to you and you shall learn a lot.
+- This bot does not uses Flashbot's bundling because it is generalized to work on chains other than Ethereum. It is riskier to frontrun on chains like BSC, FTM, AVAX because you cannot bundle the [frontrun tx - victim tx - backrun tx] into a single atomic tx as in a FlashBot's bundle. The transactions are executed non-atomically meaning you could waste money on fees. Indeed this bot still achieves to make 1$-10$ profitable sandwiches on bsc with a good node but also needs to be improved to save gas! I will leave this to you and you shall learn a lot.
 
 - With the current configuration of the bot you can also modify it to do PGAs (priced-gas-auctions). A strategy would be to save in memory the highest gasPrice tx from the mempool. If the gasPrice is higher than yours, re-send the frontrun tx with the same nonce and higher gasPrice to update the new transaction. The sell tx is a backrun, meaning that it must have the same gasPrice as the victim buy transaction so that it is directly after it !
 Currently this bot sends two transactions at the same time. The frontrun tx has a gasPrice of [user_gasPrice + 1 wei] and the backrun tx has a gasPrice of user_gasPrice. Hence the frontruntx should lend before the victim and the backrun tx after the victim. A perfect sandwich ! 
 
-- A few problem you will encounter
+- A few problems you will encounter
   1. People betting higher than you (will beat you frontrun tx)
   2. People faster than you (will beat your backrun tx)
   3.  Toxic tokens and fee tokens
