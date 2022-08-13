@@ -332,4 +332,3 @@ execute();
 //do not use the router, use swap
 
 
-//line 100 the bot finished the attack but returns main
