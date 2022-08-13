@@ -10,10 +10,9 @@ This is a frontrunning bot I wrote as a better alternative to LIBEVM'S Sandwich 
 
 I'll let you reason about this so you can go and attempt to find the equation by yourself which is a fun and challenging exercise for you to do. The equation you should obtain is
 
+![Screen Shot 2022-08-12 at 2 20 31 PM](https://user-images.githubusercontent.com/110858141/184420304-a680c548-0ff5-433e-b3cb-f98b8593714e.png)
 
 As an example, suppose the reserves of a TOKEN-WETH pool correspond to x: 30 000 y: 10 . The user's minimum amount of tokens that he will accept from adding 1 eth into the pool is 2700 tokens.
-
-![Screen Shot 2022-08-12 at 2 20 31 PM](https://user-images.githubusercontent.com/110858141/184420304-a680c548-0ff5-433e-b3cb-f98b8593714e.png)
 
 According to our magic equation, for the user to obtain 2700 tokens at the end of the sandwich the operator must add 0.05277741218 eth to the pool.
 
