@@ -38,7 +38,7 @@ The final eth reserves are 10.98 and before that it was, 11.05277 (10.05277 + 1)
 
 A net profit of 0.02 eth !! (0.07277 - 0.05277). It turns out this is actually the maximum amount of eth you could of have extracted from this trade. This was possible by buying as most tokens as possible before the user reached his slippage tolerance corresponding to 2700 tokens.
 
-The bot considers the dexFee and so the fixed equation corresponds to
+This bot considers the dexFee and so the right equation actually corresponds to
 
 ![Screen Shot 2022-08-12 at 1 59 30 PM](https://user-images.githubusercontent.com/110858141/184423426-a1b2aceb-35b6-4c66-ac3c-3b6f6d5bb244.png)
 
